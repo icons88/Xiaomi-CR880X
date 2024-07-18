@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: Build-OpenWrt-cr880x-k21.02
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/hzyitc/openwrt-redmi-ax3000
   REPO_BRANCH: ipq50xx-qsdk-kernel-5.4-openwrt-21.02-qsdk-11.5.05.841.1029
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: cr880x.config
   DIY_P1_SH: diy-1.sh
   DIY_P2_SH: diy-2.sh
   UPLOAD_BIN_DIR: false
